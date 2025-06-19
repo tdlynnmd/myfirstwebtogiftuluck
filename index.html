@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tiên tri tỉ lệ đỗ NV1</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url('https://preview.redd.it/dquztp0c25v61.png?auto=webp&s=72582907a69c9c7acc7dc5ebf6e6e88426286957') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      flex-direction: column;
+      color: lightcyan;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+    h2 {
+      border: 5px black;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 1.8rem;
+      text-align: center;
+      max-width: 320px;
+    }
+    button {
+      font-family: fantasy;
+      font-size: 1.2rem;
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: none;
+      background-color: white;
+      color: red;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    button:hover {
+      background-color: yellow;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .message {
+      margin-top: 8px;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: lightgoldenrodyellow;
+      text-shadow: 1px 1px 3px #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Tiên tri tỉ lệ đỗ NV1 chuẩn 100%</h2>
+  <button id="btnQuay">Trust me Fr</button>
+  
+  <div class="result" id="result"></div>
+  <div class="message" id="message"></div>
+
+  <script>
+    const btn = document.getElementById('btnQuay');
+    const result = document.getElementById('result');
+    const message = document.getElementById('message');
+
+    btn.addEventListener('click', () => {
+      const options = ["99.27%", "100.00%"];
+      const choice = options[Math.floor(Math.random() * options.length)];
+      result.textContent = choice;
+      message.textContent = "Tầm này tập pose dáng thủ khoa là vừa";
+    });
+  </script>
+</body>
+</html>
